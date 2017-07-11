@@ -84,7 +84,7 @@ function isPrime(num) {
       return false;
     }
   }
-return num > 1;
+  return num > 1;
 }
 
 function returnFirst(arr) {
@@ -129,6 +129,7 @@ function addItemToFront(arr, item) {
   arr.unshift(item);
   return arr;
 }
+
 function wordsToSentence(words) {
   //words is an array of strings
   //return a string that is all of the words concatenated together
@@ -195,8 +196,7 @@ return cat;
 function addProperty(object, property) {
   //add the property to the object with a value of null
   //return the object
-  //note: the property name is NOT 'property'.  The name is the value of the 
-  //argument called property (a string)
+  //note: the property name is NOT 'property'. The name is the value of the argument called property (a string)
   object[property] = null;
   return object;
 }
@@ -255,8 +255,7 @@ function hasProperty(object, property) {
 }
 
 function verifyPassword(user, password) {
-  //check to see if the provided password matches the password property on the 
-  //user object
+  //check to see if the provided password matches the password property on the user object
   //return true if they match
   //otherwise return false
   if (user.password === password) {
@@ -264,7 +263,7 @@ function verifyPassword(user, password) {
     } else {
       return false;
     }
-  }
+}
 
 function updatePassword(user, newPassword) {
   //replace the existing password on the user object with the value of newPassword
@@ -306,10 +305,8 @@ function sumUserPostLikes(user) {
 
 function addCalculateDiscountPriceMethod(storeItem) {
   //add a method to the storeItem object called 'calculateDiscountPrice'
-  //this method should multiply the storeItem's 'price' and 'discountPercentage' 
-  //to get the discount
-  //the method then subtracts the discount from the price and returns the 
-  //discounted price
+  //this method should multiply the storeItem's 'price' and 'discountPercentage' to get the discount
+  //the method then subtracts the discount from the price and returns the discounted price
   //example:
   //price -> 20
   //discountPercentage -> .2
